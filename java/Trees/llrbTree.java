@@ -52,7 +52,7 @@ public class llrbTree <Key extends Comparable<Key>, Value> {
 	}
 	
 	private int rank(Key key, Node x) {
-		if(x == null) {
+		if (x == null) {
 			return 0;
 		}
 		int compare = key.compareTo(x.key);
@@ -74,7 +74,7 @@ public class llrbTree <Key extends Comparable<Key>, Value> {
 		if (node == null) {
 			return new Node(key, value, 1);
 		}
-		if(isRed(node.left) && isRed(node.left.left)) {
+		if (isRed(node.left) && isRed(node.left.left)) {
 			node = splitFourNode(node);
 		}
 		int compare = key.compareTo(node.key);
@@ -156,7 +156,7 @@ public class llrbTree <Key extends Comparable<Key>, Value> {
 	
 	public Value get(Key key) {
 		Node x = root;
-		while (x!=null) {
+		while (x != null) {
 			int compare = key.compareTo(x.key);
 			if (compare > 0) {
 				x = x.right;
@@ -408,3 +408,4 @@ public class llrbTree <Key extends Comparable<Key>, Value> {
 		}
 	}			
 }
+
