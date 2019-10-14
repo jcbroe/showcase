@@ -9,7 +9,7 @@ import math
 def smallest_prime(n):
     # check n for minimum value, will eventually return false to end loop
     assert n >= 2
-    # sqrt of # + 1 = prime, if this n / this number has no remainders, it's a factor
+    # sqrt of # + 1
     for i in range(2, int(math.sqrt(n)) + 1):
         if n % i == 0:
             return i
