@@ -2,6 +2,8 @@
 # we get 3, 5, 6 and 9. The sum of these multiples is 23.
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
+# output should be 233168
+
 
 def sum_multiples():
     # long way - initialize variable, loop through calculating, return variable
@@ -11,7 +13,7 @@ def sum_multiples():
     #         total += x
     # return total
     # 23
-    
+
     # short way - inline
     # total = sum(x for x in range(10) if (x % 3 == 0 or x % 5 == 0))
     # return total
