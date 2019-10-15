@@ -9,6 +9,7 @@ import math
 def smallest_prime(n):
     # check n for minimum value, will eventually return false to end loop
     assert n >= 2
+    # every integer n > 1 has a unique factorization as a product of prime numbers
     # sqrt of # + 1
     for i in range(2, int(math.sqrt(n)) + 1):
         if n % i == 0:
@@ -19,6 +20,8 @@ def smallest_prime(n):
 def get_factors():
     n = 600851475143
     # while n >= 2
+    # take the number n and repeatedly divide out its smallest factor
+    # the last factor that we divide out must be the largest prime factor
     while True:
         p = smallest_prime(n)
         if p < n:
