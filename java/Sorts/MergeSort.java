@@ -1,3 +1,6 @@
+// O(n log n) worst and average case time complexity
+// O(n) best case (pre-sorted)
+
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Iterator;
