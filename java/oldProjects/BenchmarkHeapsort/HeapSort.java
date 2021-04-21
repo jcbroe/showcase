@@ -1,10 +1,3 @@
-/*
- * Name: Jacob Roe
- * CMSC 451
- * Project: 1
- * This is the class for the heap sort. Thank you wikipedia and rosettacode for the inspiration.
- */
-
 public class HeapSort implements SortInterface {
     private int count;
     private long time;
