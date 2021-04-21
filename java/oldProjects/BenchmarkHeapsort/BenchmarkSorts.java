@@ -1,10 +1,3 @@
-/*
- * Name: Jacob Roe
- * CMSC 451
- * Project: 1
- * This is the class for benchmarking the sort.
- */
-
 public class BenchmarkSorts {
     private final int arrayRuns = 50;
     private int[] testSizes;
