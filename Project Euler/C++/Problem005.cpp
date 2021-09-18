@@ -7,12 +7,14 @@
 
 using namespace std;
 
+//function to find the greatest common denominator - I believe this is available as part of the standard library in a later version of C++, include numeric or algorithm?
 int gcd(int a, int b)
 {
 	if (b == 0)
 	{
 		return a;
 	}
+	//recursive gcd, this is the way
 	return gcd(b, a % b);
 }
 
