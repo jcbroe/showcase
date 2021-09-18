@@ -9,6 +9,7 @@
 */
 
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -22,8 +23,10 @@ int main()
 		{
 			total += curr;
 		}
-		//XOR swap because why not
-		curr = curr ^ next, next = curr ^ next, curr = curr ^ next;
+		//XOR swap only works on int types, fun to show off, don't use in practice
+		//curr = curr ^ next, next = curr ^ next, curr = curr ^ next;
+		//algorithm library has built in swap, no need to reimplement the wheel
+		swap(curr, next);
 		next = next + curr;
 	}
 
