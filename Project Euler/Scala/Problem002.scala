@@ -19,7 +19,7 @@ object Problem002 extends App {
   * however, the implementation can be made more simple
   */
   
-  //how this works, add element to previous element, create new element with sum, increment.
+  //how this works, add element to previous element, create new element with sum, increment and iterate.
   //QED: Definition of Fib Sequence.
   //Above solutions are more explicit, which may or may not make them better.
   val fib: LazyList[Int] = 0 #:: fib.scanLeft(1)(_ + _)
