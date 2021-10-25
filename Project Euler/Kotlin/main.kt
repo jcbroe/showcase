@@ -3,4 +3,5 @@ fun main(args: Array<String>) {
     Euler002().solve()
     Euler003().solve()
     Euler004().solve()
+    Euler005().solve()
 }
