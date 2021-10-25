@@ -1,5 +1,6 @@
 class Euler001 : Solution {
-    override fun solve() {
+    //this is the "traditional" solution
+    /*    override fun solve() {
         var sum = 0
         for (i in 1..999) {
             if (i % 3 == 0 || i % 5 == 0) {
@@ -7,10 +8,10 @@ class Euler001 : Solution {
             }
         }
         println("Euler001 $sum")
-    }
+    } */
 
-    fun solveFunctional() {
+    override fun solve() {
         val x = (1..999).filter{ x -> x % 3 == 0 || x % 5 == 0 }.sum()
-        println("Euler001 functional $x")
+        println("Euler001 $x")
     }
 }

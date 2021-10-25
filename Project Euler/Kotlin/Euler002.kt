@@ -1,21 +1,7 @@
 class Euler002 : Solution {
-    private fun fib(): Sequence<Long> {
-        var x = 0L
-        var y = 1L
-
-        fun next(): Long {
-            val res = x + y
-            x = y
-            y = res
-
-            return x
-        }
-
-        return generateSequence(::next)
-    }
-
     override fun solve() {
-        val x = fib().takeWhile { x -> x <= 4_000_000 }.filter { x -> x % 2 == 0L }.sum()
-        println("Euler002 $x")
+        val fib = generateSequence(0 to 1) { it.second to it.first + it.second }.map { it.first }
+        var result = fib.takeWhile { it < 4000000 }.filter{x -> x % 2 == 0}.sum()
+        println("Euler002 $result")
     }
 }
