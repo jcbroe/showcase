@@ -8,4 +8,5 @@ fun main(args: Array<String>) {
     Euler007().solve()
     Euler008().solve()
     Euler009().solve()
+    Euler010().solve()
 }
