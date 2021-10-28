@@ -7,4 +7,5 @@ fun main(args: Array<String>) {
     Euler006().solve()
     Euler007().solve()
     Euler008().solve()
+    Euler009().solve()
 }

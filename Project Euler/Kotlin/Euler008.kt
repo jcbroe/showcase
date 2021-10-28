@@ -24,6 +24,7 @@ class Euler008 : Solution {
         digits = digits.replace("\n", "")
         var maxProduct = 0L
         //windowed takes each element of digits creates a length 13 element with the succeeding 12 elements of digit
+        //.indices, windowed, and chunked further on all avoid indexOutOfBound error potential I found in other solutions
         var windowed = digits.windowed(13)
         for (i in windowed.indices) {
             var product = 1L
