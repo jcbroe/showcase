@@ -1,5 +1,3 @@
-Main is is the driver program, Solution is the Interface. The Euler classes contain the code solution to each Euler problem.
-
 Project Euler Problems: https://projecteuler.net/archives
 Project Euler Solutions: https://github.com/luckytoilet/projecteuler-solutions/blob/master/Solutions.md
 
